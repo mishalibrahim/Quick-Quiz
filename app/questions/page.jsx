@@ -112,19 +112,19 @@ const Questions = () => {
         <div className="mt-[135px] px-[40px] h-full">
           {questions.length > 0 && questions[currentQuestion] && !showLoader ? (
             <div className="mb-[40px]">
-              <p className="text-[35px] font-black leading-[56px]">
+              <p className=" text-[22px] sm:text-[35px] font-black sm:leading-[56px]">
                 {questions[currentQuestion].question}
               </p>
               <div className="flex flex-col gap-[20px] mt-[20px]">
                 {questions[currentQuestion].imgsrc && (
-                  <div className="w-full h-full  relative flex justify-center items-center">
+                  <div className="w-full h-full  relative flex justify-center  items-center">
                     <Image
                       src={questions[currentQuestion].imgsrc}
                       width={300}
                       height={300}
                       objectFit="contain"
                       alt="question_img"
-                      className="w-full h-full"
+                      className="w-full sm:w-auto  h-full sm:min-h-[300px]"
                     />
                   </div>
                 )}
@@ -148,9 +148,9 @@ const Questions = () => {
                     <p className="text-[20px] font-medium">{option}</p>
                   </div>
                 ))}
-                <div className="w-full fixed left-0 max-w-[750px] bottom-[40px] px-[20px] sm:px-[40px] ease-in duration-300 flex items-center justify-center">
+                <div className="w-full fixed z-[100] left-0  mx-auto bottom-[40px] px-[20px] sm:px-[40px] ease-in duration-300 flex items-center justify-center">
                   <CustomButton
-                    className="text-white text-[20px] font-medium"
+                    className="text-white text-[24px] capitalize font-black h-[60px]  max-w-[710px]"
                     title='next'
                     icon={true}
                     disabled={selectedOptions.length === 0} // Disable button if no option is selected

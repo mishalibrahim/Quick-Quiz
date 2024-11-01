@@ -16,8 +16,12 @@
     height: 30px;
     border:3px solid #dfe0e5;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .check_icon{
+    max-width: 80%;
     opacity: 0;
     scale: 0.3;
     transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
