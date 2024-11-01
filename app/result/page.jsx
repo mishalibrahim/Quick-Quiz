@@ -7,14 +7,17 @@ const Result = async() => {
         if(response.status !== 200){
             throw new Error('Failed to finish test');
         }
-        
+        console.log(response.data);
+
     } catch (error) {
         
     }
 
 
   return (
-    <div>Result</div>
+    <section className='flex relative flex-col h-full w-full'>
+        
+    </section>
   )
 }
 

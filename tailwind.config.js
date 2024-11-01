@@ -16,6 +16,7 @@ module.exports = {
         foreground: "var(--foreground)",
         primary:'#FF3B3F',
         secondary:'#AF9CF3',
+        text_primary:'#1E1E28',
       },
       backgroundImage: {
         "home-gradient": "linear-gradient(180deg, rgba(175, 156, 243, 0) 7.92%, #AF9CF3 86.48%)",

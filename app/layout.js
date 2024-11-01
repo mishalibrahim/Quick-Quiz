@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={` font-Nunito antialiased flex justify-center items-center`}>
-        <div className=" w-full h-screen">{children}</div>
+        <div className=" w-full h-auto bg-white">{children}</div>
       </body>
     </html>
   );

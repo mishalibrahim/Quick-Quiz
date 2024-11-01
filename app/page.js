@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="flex justify-between py-[20px] flex-col bg-home-gradient h-full">
-      <div className="flex justify-center items-center">
+    <section className="flex justify-between  flex-col bg-home-gradient h-[100dvh]">
+      <div className="flex justify-center items-center pt-[20px]">
         <Image src="/assets/logo.png" width={160} height={71} alt="quiz" />
       </div>
       <div className="flex justify-center items-center">
@@ -13,8 +13,8 @@ export default function Home() {
           <p className="text-[49px] font-black text-primary">Quiz</p>
         </div>
       </div>
-      <div className="px-[20px] sm:px-[60px] mb-[20px] ease-in duration-300">
-        <Link href='/questions' className="h-[80px] flex justify-center  font-black px-[56px] text-white items-center text-[38px] w-full rounded-[80px] bg-primary">Start</Link>
+      <div className="px-[20px] sm:px-[60px] mb-[20px] ease-in duration-300 pb-[20px]">
+        <Link href='/questions' className="h-[65px] sm:h-[80px] flex justify-center  font-black px-[56px] text-white items-center text-[38px] w-full rounded-[80px] bg-primary">Start</Link>
       </div>
     </section>
   );
