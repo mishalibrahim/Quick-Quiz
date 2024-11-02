@@ -13,7 +13,7 @@ export default function Home() {
         </div>
       </div>
       <div className="px-[20px] sm:px-[60px] mb-[20px] ease-in duration-300 pb-[20px]">
-        <Link href='/questions' className="h-[65px] sm:h-[80px] flex justify-center  font-black px-[56px] text-white items-center text-[38px] w-full rounded-[80px] bg-primary">Start</Link>
+        <Link href='/questions' className="h-[65px] max-w-[630px] w-auto sm:h-[80px] flex justify-center  font-black px-[56px] text-white items-center text-[38px] mx-auto rounded-[80px] bg-primary">Start</Link>
       </div>
     </section>
   );

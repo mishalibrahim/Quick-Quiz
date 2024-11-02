@@ -17,7 +17,7 @@ export const getQuizQuestions = async () => {
       {
         id: 3,
         imgsrc: "/assets/question2.png",
-        question: "What is the output of '2' + 2 in JavaScript?",
+        question: "What is the output of below code snippet?",
         options: ["4", "'22'", "NaN", "undefined"],
         answers: ["'22'"],
       },
@@ -42,7 +42,6 @@ export const submitAnswer = async ({
 };
 
 export const finishTest = async (userAnswers) => {
-    console.log('userAnswers', userAnswers);
   try {
     const response = await getQuizQuestions();
     const questions = response.data;
@@ -57,9 +56,6 @@ export const finishTest = async (userAnswers) => {
         userAnswer.selectedOptions.every((option) =>
           question.answers.includes(option)
         );
-      console.log(
-        `Question ${question.id}: ${isCorrect ? "Correct" : "Incorrect"}`
-      );
       if (isCorrect) {
         correctAnswers++;
       }
