@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { Nunito } from "next/font/google";
+import { AppWrapper } from "./context";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,7 +27,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={` font-Nunito antialiased flex justify-center items-center`}>
+        <AppWrapper>
         <div className=" w-full h-auto bg-white">{children}</div>
+        </AppWrapper>
       </body>
     </html>
   );

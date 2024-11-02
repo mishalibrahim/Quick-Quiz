@@ -47,7 +47,7 @@ const QuestionCounter = ({currentQuestionCount,totalQuestions}) => {
             ></circle>
           </svg>
           <div className="absolute top-0 w-full h-full left-0 flex justify-center gap-[4px] items-center">
-            <p className="text-[90px] font-black italic">{currentQuestionCount}</p>
+            <p className="text-[90px] font-black italic text-text_primary">{currentQuestionCount}</p>
             <p className="text-[35px] italic font-black text-[#aeaeae] translate-y-[16px]">/{totalQuestions}</p>
           </div>
         </div>

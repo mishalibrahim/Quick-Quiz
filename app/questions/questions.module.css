@@ -9,7 +9,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 10;
+    z-index: 2;
 }
 .custom_checkbox{
     width: 30px;
@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .check_icon{
     max-width: 80%;
@@ -39,6 +40,7 @@
 .option_wrap .input:checked ~ .checbox_active_overlay{
     border:3px solid #35D299;
     opacity: 1;
+    background: #fff;
 }
 
 .option_wrap .input:checked ~ .custom_checkbox{
